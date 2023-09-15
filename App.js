@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar/>
+      <Text>Already have an account! <Text style={{fontWeight: 'bold'}}>Login</Text></Text>
       <View style={[styles.box, {backgroundColor: 'lightblue'}]}></View>
       <View style={[styles.box, styles.andoridShadow, {backgroundColor: 'lightgreen'}]}></View>
     </View>
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderWidth: 5,
     borderColor: 'purple',
-    borderRadius: 15,
+    borderRadius: 15,    
   },
 
   boxShadow: { // only applies on ios

@@ -10,7 +10,9 @@ export default function App() {
     </View>
   )
 }
+ 
 
+// Border only applies to the view for both platforms. But only android supports border everywhere.
 
 const styles = StyleSheet.create({
   container: {
@@ -22,6 +24,9 @@ const styles = StyleSheet.create({
   box: {
     height: 200,
     width: 200,
-    padding: 15
+    padding: 15,
+    borderWidth: 5,
+    borderColor: 'purple',
+    borderRadius: 15,
   }
 })

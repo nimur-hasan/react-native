@@ -1,22 +1,27 @@
-import { useState } from "react";
-import { ActivityIndicator, Alert, Button, Image, ImageBackground, Modal, Pressable, ScrollView, StatusBar, Text, Touchable, View } from "react-native";
-const logoImage = require('./assets/icon.png');
+import React from 'react'
+import { StatusBar, StyleSheet, Text, View } from 'react-native'
 
-export default function App (){
-
-
-  return <View style={{flex: 1, backgroundColor: 'plum', padding:60}}>
-    <Button title="Press Here" onPress={() => Alert.alert("Update Error", "Failed to update", [
-      {
-        text: "Cancel",
-        onPress: () => {console.log('Cancell Pressed')}
-      },
-      {
-        text: "Accept",
-        onPress: () => {console.log('Accept Pressed')}
-      }
-    ])} color={'midnightblue'}/>
-
-    
-  </View>
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <StatusBar/>
+      <View style={[styles.box, {backgroundColor: 'lightblue'}]}></View>
+      <View style={[styles.box, {backgroundColor: 'lightgreen'}]}></View>
+    </View>
+  )
 }
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    gap: 50,
+    backgroundColor: 'plum',
+    padding: 30
+  },
+  box: {
+    height: 200,
+    width: 200,
+    padding: 15
+  }
+})

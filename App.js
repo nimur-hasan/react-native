@@ -6,7 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar/>
       <View style={[styles.box, {backgroundColor: 'lightblue'}]}></View>
-      <View style={[styles.box, {backgroundColor: 'lightgreen'}]}></View>
+      <View style={[styles.box, styles.andoridShadow, {backgroundColor: 'lightgreen'}]}></View>
     </View>
   )
 }
@@ -28,5 +28,18 @@ const styles = StyleSheet.create({
     borderWidth: 5,
     borderColor: 'purple',
     borderRadius: 15,
+  },
+
+  boxShadow: { // only applies on ios
+    shadowColor: "#333333",
+    shadowOffset: {
+      width: 6,
+      height: 6,
+    },
+    shadowOpacity: 0.6,
+    shadowRadius: 4
+  },
+  andoridShadow: {    
+    elevation: 6
   }
 })

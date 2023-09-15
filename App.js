@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     gap: 50,
-    backgroundColor: 'plum',
+    backgroundColor: 'green',
     padding: 30
   },
   box: {
